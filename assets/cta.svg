@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img" aria-label="Start a project with Nexariza AI">
+<style></style>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#05060A"/><stop offset="1" stop-color="#0B1020"/></linearGradient>
+<linearGradient id="gold" x1="0" x2="1"><stop offset="0" stop-color="#F0D58C"/><stop offset="1" stop-color="#C9A24B"/></linearGradient>
+<linearGradient id="line" x1="0" x2="1"><stop offset="0" stop-color="#C9A24B"/><stop offset="1" stop-color="#2E9BFF"/></linearGradient>
+<radialGradient id="glowB" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#2E9BFF" stop-opacity=".30"/><stop offset="1" stop-color="#2E9BFF" stop-opacity="0"/></radialGradient>
+<radialGradient id="glowG" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#C9A24B" stop-opacity=".28"/><stop offset="1" stop-color="#C9A24B" stop-opacity="0"/></radialGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#FFFFFF" stroke-opacity=".035"/></pattern>
+</defs>
+<rect width="1200" height="190" rx="20" fill="url(#bg)"/>
+<rect width="1200" height="190" rx="20" fill="url(#grid)"/>
+<circle cx="1050" cy="95" r="220" fill="url(#glowG)"/>
+<text x="60" y="78" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="800" fill="#E8ECF5">Have a problem worth solving with AI?</text>
+<text x="60" y="114" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="16" fill="#AEB7C8">Computer vision pipelines, AI agents, automation systems</text>
+<text x="60" y="138" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="16" fill="#AEB7C8">and full-stack AI products, engineered end to end.</text>
+<rect x="830" y="64" width="310" height="58" rx="29" fill="url(#gold)"/>
+<text x="985" y="100" text-anchor="middle" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="800" fill="#05060A">nexariza.com/contact</text>
+<rect x=".5" y=".5" width="1199" height="189" rx="19.5" fill="none" stroke="#3A3120"/>
+</svg>

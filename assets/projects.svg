@@ -1,234 +1,37 @@
-<svg width="1200" height="297" viewBox="0 0 1200 297" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Selected projects: Detectra AI, Nexariza Cortex, NexarizaFlow">
+<style></style>
 <defs>
-  <linearGradient id="pg" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%" stop-color="#06060E"/><stop offset="100%" stop-color="#080818"/>
-  </linearGradient>
-  <linearGradient id="cs" x1="10%" y1="0%" x2="90%" y2="100%">
-    <stop offset="0%" stop-color="#0F0F1F"/><stop offset="100%" stop-color="#0B0B16"/>
-  </linearGradient>
-  <linearGradient id="gf" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0.068"/>
-    <stop offset="45%"  stop-color="#FFFFFF" stop-opacity="0.030"/>
-    <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.008"/>
-  </linearGradient>
-  <linearGradient id="ge" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%"   stop-color="#00B4D8" stop-opacity="0.70"/>
-    <stop offset="18%"  stop-color="#FFFFFF"  stop-opacity="0.24"/>
-    <stop offset="55%"  stop-color="#5856D6"  stop-opacity="0.22"/>
-    <stop offset="100%" stop-color="#00B4D8"  stop-opacity="0.04"/>
-  </linearGradient>
-  <linearGradient id="ts" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%"   stop-color="#FFFFFF" stop-opacity="0"/>
-    <stop offset="32%"  stop-color="#FFFFFF" stop-opacity="0.20"/>
-    <stop offset="68%"  stop-color="#FFFFFF" stop-opacity="0.20"/>
-    <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
-  </linearGradient>
-  <linearGradient id="wb" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%"   stop-color="#0096C7" stop-opacity="0"/>
-    <stop offset="30%"  stop-color="#00B4D8">
-      <animate attributeName="stop-color" dur="4s" repeatCount="indefinite"
-        values="#00B4D8;#90E0EF;#5856D6;#00B4D8"/>
-    </stop>
-    <stop offset="70%"  stop-color="#5856D6">
-      <animate attributeName="stop-color" dur="4s" repeatCount="indefinite"
-        values="#5856D6;#00B4D8;#90E0EF;#5856D6"/>
-    </stop>
-    <stop offset="100%" stop-color="#5856D6" stop-opacity="0"/>
-  </linearGradient>
-  <filter id="bg-blur" x="-50%" y="-50%" width="200%" height="200%">
-    <feGaussianBlur stdDeviation="55"/>
-  </filter>
-  <filter id="cf" x="-12%" y="-12%" width="124%" height="124%"
-    color-interpolation-filters="linearRGB">
-    <feGaussianBlur in="SourceAlpha" stdDeviation="11" result="b1"/>
-    <feOffset in="b1" dx="10" dy="10" result="od"/>
-    <feFlood flood-color="#010104" flood-opacity="1" result="cd"/>
-    <feComposite in="cd" in2="od" operator="in" result="sd"/>
-    <feGaussianBlur in="SourceAlpha" stdDeviation="11" result="b2"/>
-    <feOffset in="b2" dx="-10" dy="-10" result="ol"/>
-    <feFlood flood-color="#161632" flood-opacity="0.62" result="cl"/>
-    <feComposite in="cl" in2="ol" operator="in" result="sl"/>
-    <feTurbulence type="fractalNoise" baseFrequency="0.72" numOctaves="4"
-      stitchTiles="stitch" result="tn"/>
-    <feColorMatrix type="saturate" values="0" in="tn" result="gn"/>
-    <feComposite in="gn" in2="SourceAlpha" operator="in" result="cn"/>
-    <feComponentTransfer in="cn" result="dn">
-      <feFuncA type="linear" slope="0.040"/>
-    </feComponentTransfer>
-    <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="sf"/>
-    <feSpecularLighting in="sf" surfaceScale="3" specularConstant="0.5"
-      specularExponent="22" lighting-color="#FFFFFF" result="sp">
-      <fePointLight x="80" y="40" z="180"/>
-    </feSpecularLighting>
-    <feComposite in="sp" in2="SourceAlpha" operator="in" result="spc"/>
-    <feComponentTransfer in="spc" result="spd">
-      <feFuncA type="linear" slope="0.10"/>
-    </feComponentTransfer>
-    <feMerge>
-      <feMergeNode in="sd"/>
-      <feMergeNode in="sl"/>
-      <feMergeNode in="SourceGraphic"/>
-      <feMergeNode in="dn"/>
-      <feMergeNode in="spd"/>
-    </feMerge>
-  </filter>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#05060A"/><stop offset="1" stop-color="#0B1020"/></linearGradient>
+<linearGradient id="gold" x1="0" x2="1"><stop offset="0" stop-color="#F0D58C"/><stop offset="1" stop-color="#C9A24B"/></linearGradient>
+<linearGradient id="line" x1="0" x2="1"><stop offset="0" stop-color="#C9A24B"/><stop offset="1" stop-color="#2E9BFF"/></linearGradient>
+<radialGradient id="glowB" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#2E9BFF" stop-opacity=".30"/><stop offset="1" stop-color="#2E9BFF" stop-opacity="0"/></radialGradient>
+<radialGradient id="glowG" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#C9A24B" stop-opacity=".28"/><stop offset="1" stop-color="#C9A24B" stop-opacity="0"/></radialGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#FFFFFF" stroke-opacity=".035"/></pattern>
 </defs>
-<rect width="1200" height="297" fill="url(#pg)"/>
-<ellipse cx="204" cy="148" rx="280" ry="200" fill="#0096C7" fill-opacity="0.07" filter="url(#bg-blur)"/>
-<ellipse cx="600" cy="148" rx="260" ry="200" fill="#5856D6" fill-opacity="0.05" filter="url(#bg-blur)"/>
-<ellipse cx="996" cy="148" rx="280" ry="200" fill="#0096C7" fill-opacity="0.07" filter="url(#bg-blur)"/>
-  <!-- Detectra AI -->
-  <rect x="10" y="10" width="388" height="275" rx="20"
-    fill="url(#cs)" filter="url(#cf)"/>
-  <rect x="10" y="10" width="388" height="275" rx="20"
-    fill="url(#gf)" stroke="url(#ge)" stroke-width="1"/>
-  <rect x="10" y="10" width="388" height="2.5" rx="1" fill="url(#ts)"/>
-  <rect x="10" y="10" width="388" height="4" rx="2" fill="url(#wb)"/>
-  <!-- Badge bar at top-right -->
-  <rect x="288" y="24" width="96" height="18" rx="9"
-    fill="#00B4D8" fill-opacity="0.15" stroke="#00B4D8" stroke-opacity="0.35" stroke-width="0.8"/>
-  <text x="336" y="36" text-anchor="middle"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="9.5" font-weight="500" fill="#00B4D8">Final Year Project</text>
-  <!-- Title -->
-  <text x="30" y="68"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="20" font-weight="700" fill="#FFFFFF" letter-spacing="-0.5">Detectra AI</text>
-  <!-- Subtitle -->
-  <text x="30" y="90"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="11.5" font-weight="300" fill="#8E8E93" letter-spacing="0.2">Multimodal Video Intelligence Platform</text>
-  <!-- Divider -->
-  <line x1="30" y1="106" x2="378" y2="106"
-    stroke="#FFFFFF" stroke-width="0.5" stroke-opacity="0.07"/>
-  <!-- Description -->
-  <text x="30" y="132"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="12" font-weight="300" fill="#AEAEB2">Custom CrossModalTransformer fusing</text>
-  <text x="30" y="152"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="12" font-weight="300" fill="#AEAEB2">YOLOv8, ByteTrack, Whisper Large-v3,</text>
-  <text x="30" y="172"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="12" font-weight="300" fill="#AEAEB2">EasyOCR for full scene understanding.</text>
-  <!-- Tags -->
-  <rect x="30" y="220" width="67" height="20" rx="10"
-    fill="#00B4D8" fill-opacity="0.15" stroke="#00B4D8" stroke-opacity="0.30" stroke-width="0.8"/>
-  <text x="63.5" y="233" text-anchor="middle"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="10" font-weight="500" fill="#00B4D8">PyTorch</text>  <rect x="105" y="220" width="60" height="20" rx="10"
-    fill="#5856D6" fill-opacity="0.15" stroke="#5856D6" stroke-opacity="0.30" stroke-width="0.8"/>
-  <text x="135.0" y="233" text-anchor="middle"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="10" font-weight="500" fill="#5856D6">YOLOv8</text>  <rect x="173" y="220" width="67" height="20" rx="10"
-    fill="#00B4D8" fill-opacity="0.15" stroke="#00B4D8" stroke-opacity="0.30" stroke-width="0.8"/>
-  <text x="206.5" y="233" text-anchor="middle"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="10" font-weight="500" fill="#00B4D8">FastAPI</text>
-  <!-- Bottom rule -->
-  <line x1="30" y1="258" x2="378" y2="258"
-    stroke="#FFFFFF" stroke-width="0.4" stroke-opacity="0.06"/>
-</rect>  <!-- Medical AI -->
-  <rect x="406" y="10" width="388" height="275" rx="20"
-    fill="url(#cs)" filter="url(#cf)"/>
-  <rect x="406" y="10" width="388" height="275" rx="20"
-    fill="url(#gf)" stroke="url(#ge)" stroke-width="1"/>
-  <rect x="406" y="10" width="388" height="2.5" rx="1" fill="url(#ts)"/>
-  <rect x="406" y="10" width="388" height="4" rx="2" fill="url(#wb)"/>
-  <!-- Badge bar at top-right -->
-  <rect x="684" y="24" width="96" height="18" rx="9"
-    fill="#5856D6" fill-opacity="0.15" stroke="#5856D6" stroke-opacity="0.35" stroke-width="0.8"/>
-  <text x="732" y="36" text-anchor="middle"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="9.5" font-weight="500" fill="#5856D6">Peer-Reviewed</text>
-  <!-- Title -->
-  <text x="426" y="68"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="20" font-weight="700" fill="#FFFFFF" letter-spacing="-0.5">Medical AI</text>
-  <!-- Subtitle -->
-  <text x="426" y="90"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="11.5" font-weight="300" fill="#8E8E93" letter-spacing="0.2">Prostate Cancer Detection from MRI</text>
-  <!-- Divider -->
-  <line x1="426" y1="106" x2="774" y2="106"
-    stroke="#FFFFFF" stroke-width="0.5" stroke-opacity="0.07"/>
-  <!-- Description -->
-  <text x="426" y="132"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="12" font-weight="300" fill="#AEAEB2">Deep learning CNN pipeline achieving</text>
-  <text x="426" y="152"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="12" font-weight="300" fill="#AEAEB2">94.2% accuracy and 0.96 AUC-ROC.</text>
-  <text x="426" y="172"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="12" font-weight="300" fill="#AEAEB2">Peer-reviewed and published.</text>
-  <!-- Tags -->
-  <rect x="426" y="220" width="88" height="20" rx="10"
-    fill="#5856D6" fill-opacity="0.15" stroke="#5856D6" stroke-opacity="0.30" stroke-width="0.8"/>
-  <text x="470.0" y="233" text-anchor="middle"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="10" font-weight="500" fill="#5856D6">Medical AI</text>  <rect x="522" y="220" width="39" height="20" rx="10"
-    fill="#00B4D8" fill-opacity="0.15" stroke="#00B4D8" stroke-opacity="0.30" stroke-width="0.8"/>
-  <text x="541.5" y="233" text-anchor="middle"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="10" font-weight="500" fill="#00B4D8">CNN</text>  <rect x="569" y="220" width="74" height="20" rx="10"
-    fill="#5856D6" fill-opacity="0.15" stroke="#5856D6" stroke-opacity="0.30" stroke-width="0.8"/>
-  <text x="606.0" y="233" text-anchor="middle"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="10" font-weight="500" fill="#5856D6">Research</text>
-  <!-- Bottom rule -->
-  <line x1="426" y1="258" x2="774" y2="258"
-    stroke="#FFFFFF" stroke-width="0.4" stroke-opacity="0.06"/>
-</rect>  <!-- Access Control -->
-  <rect x="802" y="10" width="388" height="275" rx="20"
-    fill="url(#cs)" filter="url(#cf)"/>
-  <rect x="802" y="10" width="388" height="275" rx="20"
-    fill="url(#gf)" stroke="url(#ge)" stroke-width="1"/>
-  <rect x="802" y="10" width="388" height="2.5" rx="1" fill="url(#ts)"/>
-  <rect x="802" y="10" width="388" height="4" rx="2" fill="url(#wb)"/>
-  <!-- Badge bar at top-right -->
-  <rect x="1080" y="24" width="96" height="18" rx="9"
-    fill="#00B4D8" fill-opacity="0.15" stroke="#00B4D8" stroke-opacity="0.35" stroke-width="0.8"/>
-  <text x="1128" y="36" text-anchor="middle"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="9.5" font-weight="500" fill="#00B4D8">Client Delivery</text>
-  <!-- Title -->
-  <text x="822" y="68"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="20" font-weight="700" fill="#FFFFFF" letter-spacing="-0.5">Access Control</text>
-  <!-- Subtitle -->
-  <text x="822" y="90"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="11.5" font-weight="300" fill="#8E8E93" letter-spacing="0.2">Face Recognition · Industrial Grade</text>
-  <!-- Divider -->
-  <line x1="822" y1="106" x2="1170" y2="106"
-    stroke="#FFFFFF" stroke-width="0.5" stroke-opacity="0.07"/>
-  <!-- Description -->
-  <text x="822" y="132"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="12" font-weight="300" fill="#AEAEB2">SCRFD + AdaFace on Q-BOX-E10 with</text>
-  <text x="822" y="152"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="12" font-weight="300" fill="#AEAEB2">ONNX Runtime. Wiegand-48 hardware.</text>
-  <text x="822" y="172"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="12" font-weight="300" fill="#AEAEB2">Sub-second identification in production.</text>
-  <!-- Tags -->
-  <rect x="822" y="220" width="46" height="20" rx="10"
-    fill="#00B4D8" fill-opacity="0.15" stroke="#00B4D8" stroke-opacity="0.30" stroke-width="0.8"/>
-  <text x="845.0" y="233" text-anchor="middle"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="10" font-weight="500" fill="#00B4D8">ONNX</text>  <rect x="876" y="220" width="67" height="20" rx="10"
-    fill="#5856D6" fill-opacity="0.15" stroke="#5856D6" stroke-opacity="0.30" stroke-width="0.8"/>
-  <text x="909.5" y="233" text-anchor="middle"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="10" font-weight="500" fill="#5856D6">AdaFace</text>  <rect x="951" y="220" width="53" height="20" rx="10"
-    fill="#00B4D8" fill-opacity="0.15" stroke="#00B4D8" stroke-opacity="0.30" stroke-width="0.8"/>
-  <text x="977.5" y="233" text-anchor="middle"
-    font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif"
-    font-size="10" font-weight="500" fill="#00B4D8">SCRFD</text>
-  <!-- Bottom rule -->
-  <line x1="822" y1="258" x2="1170" y2="258"
-    stroke="#FFFFFF" stroke-width="0.4" stroke-opacity="0.06"/>
-</rect>
+<rect x="0.5" y=".5" width="379" height="319" rx="18" fill="#0A0D16" stroke="#3A3120"/>
+<rect x="24" y="0" width="332" height="4" rx="2" fill="#C9A24B" fill-opacity=".9"/>
+<text x="28" y="56" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="3" fill="#C9A24B">PROJECT 01</text>
+<text x="28" y="94" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="800" fill="#E8ECF5">Detectra AI</text>
+<text x="28" y="122" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="600" fill="#C9A24B">Multimodal video intelligence</text>
+<text x="28" y="160" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5" fill="#AEB7C8">Fuses YOLOv8 + ByteTrack tracking, Whisper</text>
+<text x="28" y="184" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5" fill="#AEB7C8">Large-v3 speech, audio events (Librosa,</text>
+<text x="28" y="208" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5" fill="#AEB7C8">PANNs) and on-screen text (EasyOCR) into</text>
+<text x="28" y="232" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5" fill="#AEB7C8">one searchable timeline.</text>
+<rect x="28" y="262" width="100" height="26" rx="13" fill="#0F1422" stroke="#2A3045"/><text x="78.0" y="279" text-anchor="middle" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#E8ECF5">Multimodal</text><rect x="136" y="262" width="136" height="26" rx="13" fill="#0F1422" stroke="#2A3045"/><text x="204.0" y="279" text-anchor="middle" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#E8ECF5">Video Analytics</text><rect x="280" y="262" width="71" height="26" rx="13" fill="#0F1422" stroke="#2A3045"/><text x="315.5" y="279" text-anchor="middle" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#E8ECF5">Agents</text><rect x="410.5" y=".5" width="379" height="319" rx="18" fill="#0A0D16" stroke="#3A3120"/>
+<rect x="434" y="0" width="332" height="4" rx="2" fill="#2E9BFF" fill-opacity=".9"/>
+<text x="438" y="56" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="3" fill="#2E9BFF">PROJECT 02</text>
+<text x="438" y="94" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="800" fill="#E8ECF5">Nexariza Cortex</text>
+<text x="438" y="122" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="600" fill="#2E9BFF">Agentic business operating system</text>
+<text x="438" y="160" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5" fill="#AEB7C8">A blueprint for an agentic business</text>
+<text x="438" y="184" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5" fill="#AEB7C8">operating system, built around AI agents,</text>
+<text x="438" y="208" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5" fill="#AEB7C8">tools and orchestrated workflows.</text>
+<rect x="438" y="262" width="100" height="26" rx="13" fill="#0F1422" stroke="#2A3045"/><text x="488.0" y="279" text-anchor="middle" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#E8ECF5">Agentic AI</text><rect x="546" y="262" width="121" height="26" rx="13" fill="#0F1422" stroke="#2A3045"/><text x="606.5" y="279" text-anchor="middle" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#E8ECF5">Orchestration</text><rect x="675" y="262" width="100" height="26" rx="13" fill="#0F1422" stroke="#2A3045"/><text x="725.0" y="279" text-anchor="middle" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#E8ECF5">Automation</text><rect x="820.5" y=".5" width="379" height="319" rx="18" fill="#0A0D16" stroke="#3A3120"/>
+<rect x="844" y="0" width="332" height="4" rx="2" fill="#C9A24B" fill-opacity=".9"/>
+<text x="848" y="56" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="3" fill="#C9A24B">PROJECT 03</text>
+<text x="848" y="94" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="800" fill="#E8ECF5">NexarizaFlow</text>
+<text x="848" y="122" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="600" fill="#C9A24B">Self-hosted extension platform</text>
+<text x="848" y="160" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5" fill="#AEB7C8">A self-hosted browser-extension platform,</text>
+<text x="848" y="184" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5" fill="#AEB7C8">engineered and deployed end to end by</text>
+<text x="848" y="208" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="13.5" fill="#AEB7C8">Nexariza AI.</text>
+<rect x="848" y="262" width="107" height="26" rx="13" fill="#0F1422" stroke="#2A3045"/><text x="901.5" y="279" text-anchor="middle" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#E8ECF5">Self-hosted</text><rect x="963" y="262" width="92" height="26" rx="13" fill="#0F1422" stroke="#2A3045"/><text x="1009.0" y="279" text-anchor="middle" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#E8ECF5">Extension</text><rect x="1063" y="262" width="78" height="26" rx="13" fill="#0F1422" stroke="#2A3045"/><text x="1102.0" y="279" text-anchor="middle" font-family="'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#E8ECF5">Product</text>
 </svg>
